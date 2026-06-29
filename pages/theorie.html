@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+  pages/theorie.html — Seite des Theorie-Moduls
+  Lädt: gemeinsames Styling, die Lerndaten (data.js), die geteilte
+  Navigation (app.js) und die Modul-Logik (theorie.js).
+  Der gesamte Modul-Inhalt wird per JS in #app erzeugt.
+-->
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Theorie · Fischerprüfung NRW</title>
+  <!-- ../ weil diese Seite im Unterordner /pages liegt -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-base="../" data-page="theorie">
+
+  <header class="site-header"></header>
+
+  <main>
+    <div class="container">
+      <div class="page-head">
+        <span class="kicker">Modul 1</span>
+        <h1>Theorie-Training</h1>
+        <p>Der vollständige Fragenkatalog der Fischerprüfung NRW. Wähle ein
+           Sachgebiet zum gezielten Üben oder starte eine Prüfungssimulation
+           quer durch alle Themen.</p>
+      </div>
+
+      <!-- Hier rendert theorie.js den Modul-Inhalt -->
+      <div id="app"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer"></footer>
+
+  <!-- Reihenfolge wichtig: erst Daten, dann gemeinsame Helfer, dann das Modul -->
+  <script src="../js/data.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/theorie.js"></script>
+</body>
+</html>

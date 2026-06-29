@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+  pages/geraetebau.html — Seite des Gerätebau-Moduls (Rutenmontagen A1–A10)
+  Lädt Styling, Lerndaten (data.js), Navigation (app.js) und die
+  Modul-Logik (geraetebau.js). Inhalt wird per JS in #app erzeugt.
+-->
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gerätebau · Fischerprüfung NRW</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-base="../" data-page="geraetebau">
+
+  <header class="site-header"></header>
+
+  <main>
+    <div class="container">
+      <div class="page-head">
+        <span class="kicker">Modul 2</span>
+        <h1>Gerätebau-Trainer</h1>
+        <p>Baue die zehn Prüfungs-Montagen A1 bis A10 Schritt für Schritt auf.
+           Wähle aus dem vollständigen Bauteile-Katalog die richtigen Teile in
+           der richtigen Reihenfolge – falsche Teile werden abgewiesen.</p>
+      </div>
+
+      <!-- Hier rendert geraetebau.js den Modul-Inhalt -->
+      <div id="app"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer"></footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/geraetebau.js"></script>
+</body>
+</html>
